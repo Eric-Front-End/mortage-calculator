@@ -1,5 +1,6 @@
 {
   "name": "mortage-calculator",
+  "homepage": "https://Eric-Front-End.github.io/mortage-calculator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
