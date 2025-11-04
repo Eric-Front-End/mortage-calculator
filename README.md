@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# Mortgage Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple front-end application built to calculate monthly mortgage payments based on user-provided loan details.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the deployed project and test it live here:
 
-## React Compiler
+**[View Demo](https://eric-front-end.github.io/mortage-calculator/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Project Description
 
-## Expanding the ESLint configuration
+This project is a clean and functional mortgage calculator. It provides a user-friendly interface for potential home buyers or borrowers to quickly estimate their monthly payments.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application takes the loan amount, the annual interest rate, and the loan term in years as inputs, then performs the necessary calculations to display the resulting monthly payment.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Core Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Input Form:** Allows users to enter:
+    * Total Loan Amount
+    * Annual Interest Rate (%)
+    * Loan Term (in years)
+* **Real-time Calculation:** A "Calculate" button processes the inputs and instantly displays the result.
+* **Result Display:** Clearly shows the calculated monthly payment.
+* **Form Validation:** (Assumed) Includes basic validation to ensure all fields are filled correctly with numeric values.
+* **Responsive Design:** The layout is designed to be accessible and usable on various screen sizes, including mobile devices.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Technologies Used
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This project was built using core front-end technologies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **HTML5:** For the semantic structure, primarily the input form and the results container.
+* **CSS3:** For all styling, layout, and making the interface clean and responsive.
+* **JavaScript (Vanilla JS):**
+    * To capture user input from the form.
+    * To perform the mortgage calculation (using the standard amortization formula).
+    * To dynamically update the DOM to display the calculated result.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏁 Getting Started
+
+If you want to run this project on your local machine, follow these steps:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Eric-Front-End/mortage-calculator.git](https://github.com/Eric-Front-End/mortage-calculator.git)
+    ```
+
+2.  **Navigate to the directory:**
+    ```bash
+    cd mortage-calculator
+    ```
+
+3.  **Open the project:**
+    Simply open the `index.html` file in your preferred web browser.
