@@ -6,7 +6,7 @@ export const Instructions = ({ styles='' }: Props) => {
   return (
     <div className={`${styles} bg-Slate-900 text-White py-8 px-6 text-center lg:h-full lg:rounded-bl-[80px]`}>
       <img 
-        src="/assets/images/illustration-empty.svg" 
+        src="assets/images/illustration-empty.svg" 
         alt="illustration empty" 
         className="m-auto mb-4"
       />
